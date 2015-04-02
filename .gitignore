@@ -1,0 +1,5 @@
+.idea
+.vagrant
+*.sublime-project
+*.sublime-workspace
+_*

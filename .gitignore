@@ -3,3 +3,12 @@
 *.sublime-project
 *.sublime-workspace
 _*
+
+
+# IDE
+.idea
+*.sublime-project
+*.sublime-workspace
+
+# OS
+Thumbs.db

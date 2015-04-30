@@ -1,9 +1,6 @@
-.idea
+# Application
 .vagrant
-*.sublime-project
-*.sublime-workspace
 _*
-
 
 # IDE
 .idea

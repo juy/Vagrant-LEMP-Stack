@@ -12,16 +12,18 @@ $config = YAML::load_file($config_file)
 Vagrant.configure(2) do |config|
 
   # Configure the box
-  config.vm.box = "vagrant-lemp-stack"
+  config.vm.box = "vagrant-lemp-stack" # hostname is vagrant
   #config.vm.box_url = "file:///c:/path/to/vm.box"
-  config.vm.hostname = $config['hostname']
+  config.vm.box_check_update = false
+  config.vm.boot_timeout = 60
+  #config.vm.hostname = $config['hostname'] # Disable reason: https://github.com/mitchellh/vagrant/issues/5673
 
   # https://github.com/dotless-de/vagrant-vbguest
   config.vbguest.auto_update = false
-  
+
   # Private network IP
   config.vm.network :private_network, ip: $config['box_ipaddress']
-  
+
   # Allow caching to be used
   # http://fgrehm.viewdocs.io/vagrant-cachier/usage
   if Vagrant.has_plugin?("vagrant-cachier")
@@ -61,5 +63,5 @@ Vagrant.configure(2) do |config|
   config.vm.network :forwarded_port, guest: 11211, host: 11212, auto_correct: true  # Memcached
   config.vm.network :forwarded_port, guest: 35729, host: 35729, auto_correct: true  # Livereload
   config.vm.network :forwarded_port, guest: 1080,  host: 10800, auto_correct: true  # MailCatcher
-  
+
 end

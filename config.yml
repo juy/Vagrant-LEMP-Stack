@@ -3,18 +3,11 @@
   box_ipaddress: "192.168.12.12"
   box_memory: 2048
   box_cpu: 1
-  box_user: "vagrant"
+
+# Default settings
+  default_user: "vagrant"
   timezone: Europe/Istanbul
 
 # Git config user credentials
   git_user_name: ""
   git_user_email: ""
-
-# Ansible pre settings
-  ansible_provision: true
-  ansible_verbose: false
-
-# For some development test
-  test_install: true
-  debug_test_message: "Debug message test"
-  test_task_message: "Test Task"

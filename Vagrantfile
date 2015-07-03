@@ -16,7 +16,6 @@ Vagrant.configure(2) do |config|
   #config.vm.box_url = "file:///c:/path/to/vm.box"
   config.vm.box_check_update = false
   config.vm.boot_timeout = 60
-  #config.vm.hostname = $config['hostname'] # Disable reason: https://github.com/mitchellh/vagrant/issues/5673
 
   # https://github.com/dotless-de/vagrant-vbguest
   config.vbguest.auto_update = false

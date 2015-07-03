@@ -5,7 +5,6 @@
   box_cpu: 1
   box_name: "juyuser"
   box_user: "vagrant"
-  hostname: "juyuser"
   timezone: Europe/Istanbul
 
 # Git config user credentials

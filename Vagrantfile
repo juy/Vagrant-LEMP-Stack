@@ -29,7 +29,7 @@ Vagrant.configure(2) do |config|
     config.cache.scope = :box
     config.cache.auto_detect = false
     config.cache.enable :apt
-    config.cache.enable :npm
+    #config.cache.enable :npm  # Make problems
     config.cache.enable :composer
     config.cache.enable :bower
     config.cache.enable :gem

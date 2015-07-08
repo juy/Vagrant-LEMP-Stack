@@ -6,7 +6,6 @@
   default_name: "vagrantlemp"
 
 # Default settings
-  default_user: "vagrant"
   timezone: Europe/Istanbul
 
 # Use vagrant cachier plugin

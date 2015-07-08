@@ -7,7 +7,7 @@ Vagrant.require_version ">= 1.5"
 
 # Include config from config file
 require 'yaml'
-$config_file = "vagrant/vagrant_config.yml"
+$config_file = "vagrant/config.yml"
 $config = YAML::load_file($config_file)
 
 # Vagrant configure

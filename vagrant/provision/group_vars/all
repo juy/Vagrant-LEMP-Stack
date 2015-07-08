@@ -1,0 +1,7 @@
+---
+config_file: "../config.yml"
+ubuntu_name: "vivid"
+user: "vagrant"
+home_dir: "/home/{{ user }}"
+srv_dir: "/home/{{ user }}/srv"
+tool_dir: "/home/{{ user }}/srv/tools"

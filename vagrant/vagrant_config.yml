@@ -3,10 +3,18 @@
   box_ipaddress: "192.168.12.12"
   box_memory: 2048
   box_cpu: 1
+  default_name: "vagrantlemp"
 
 # Default settings
   default_user: "vagrant"
   timezone: Europe/Istanbul
+
+# Use vagrant cachier plugin
+  use_cachier: true
+
+# Ansible provision settings
+  ansible_provision: false
+  ansible_verbose: false
 
 # Git config user credentials
   git_user_name: ""

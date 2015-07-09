@@ -3,7 +3,6 @@
   box_ipaddress: "192.168.12.12"
   box_memory: 2048
   box_cpu: 1
-  default_name: "vagrantlemp"
 
 # Default settings
   timezone: Europe/Istanbul

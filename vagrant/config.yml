@@ -18,3 +18,8 @@
 # Git config user credentials
   git_user_name: ""
   git_user_email: ""
+
+# TODO: Install fresh laravel
+# TODO: maybe create array, loop etc for multi laravel
+  laravel_install: false
+  laravel_app_name: "laraveltest"

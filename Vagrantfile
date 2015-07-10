@@ -17,7 +17,11 @@ Vagrant.configure(2) do |config|
   config.vm.box = "vagrant-lemp-stack"
   config.vm.box_check_update = false
   config.vm.boot_timeout = 60
-  
+
+  # Vagrant default name
+  config.vm.define "#{$config['default_name']}" do |t|
+  end
+
   # https://github.com/dotless-de/vagrant-vbguest
   config.vbguest.auto_update = false
 

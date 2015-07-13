@@ -6,7 +6,7 @@
 # Check vagrant version
 if Vagrant::VERSION < "1.5.0"
   puts "Please upgrade to vagrant 1.5+: "
-  puts "http://www.vagrantup.com/downloads.html"
+  puts "https://www.vagrantup.com/downloads.html"
   puts
   exit
 end

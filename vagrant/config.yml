@@ -1,25 +1,34 @@
----
-# Vagrantfile configuration
-  box_ipaddress: "192.168.12.12"
-  box_memory: 2048
-  box_cpu: 1
-  default_name: "vagrantlemp"
+# Virtual system configuration
+vm:
+  ip: "192.168.12.12"
+  memory: 2048
+  cpu: 1
 
-# Default settings
-  timezone: Europe/Istanbul
+# Set the name of the VM
+machine_name: "vagrantlemp"
+
+# Default timezone
+timezone: Europe/Istanbul
 
 # Use vagrant cachier plugin
-  use_cachier: true
+use_cachier: true
 
 # Ansible provision settings
-  ansible_provision: false
-  ansible_verbose: false
+ansible:
+  provision: true
+  verbose: false
 
 # Git config user credentials
-  git_user_name: ""
-  git_user_email: ""
+git:
+  user_name: ""
+  user_email: ""
 
-# TODO: Install fresh laravel
-# TODO: maybe create array, loop etc for multi laravel
-  laravel_install: false
-  laravel_app_name: "laraveltest"
+# Blackfire settings
+blackfire:
+  server_id: ""
+  server_token: ""
+
+# Debug message for development test
+test:
+  install: false
+  message: "Debug message test"

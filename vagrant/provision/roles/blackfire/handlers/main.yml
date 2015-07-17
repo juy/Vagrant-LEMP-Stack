@@ -1,0 +1,6 @@
+---
+- name: restart blackfire-agent
+  service: name=blackfire-agent state=restarted
+
+- name: restart php5-fpm
+  service: name=php5-fpm state=restarted

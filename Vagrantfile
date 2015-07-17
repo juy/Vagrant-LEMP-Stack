@@ -13,8 +13,7 @@ end
 
 # Include config from config file
 require 'yaml'
-$config_file = "vagrant/config.yml"
-$config = YAML::load_file($config_file)
+$config = YAML::load_file("vagrant/config.yml")
 
 # Vagrant configure
 Vagrant.configure(2) do |config|
@@ -24,15 +23,22 @@ Vagrant.configure(2) do |config|
   config.vm.box_check_update = false
   config.vm.boot_timeout = 60
 
-  # Vagrant default name
-  config.vm.define "#{$config['default_name']}" do |t|
+  # Set the name of the VM. See: http://stackoverflow.com/a/17864388/100134
+  config.vm.define "#{$config['machine_name']}" do |t|
   end
 
   # https://github.com/dotless-de/vagrant-vbguest
   config.vbguest.auto_update = false
 
+  # SSH settings
+  #config.ssh.username = "vagrant"
+  #config.ssh.password = "vagrant"
+
+  # https://github.com/dotless-de/vagrant-vbguest
+  config.vbguest.auto_update = false
+
   # Private network IP
-  config.vm.network :private_network, ip: $config['box_ipaddress']
+  config.vm.network :private_network, ip: $config['vm']['ip']
   #config.ssh.forward_agent = true
 
   # Allow caching to be used
@@ -59,40 +65,43 @@ Vagrant.configure(2) do |config|
   config.vm.provider :virtualbox do |v|
       v.customize [
           "modifyvm", :id,
-          "--memory", $config['box_memory'],
-          "--cpus", $config['box_cpu'],
+          "--memory", $config['vm']['memory'],
+          "--cpus", $config['vm']['cpu'],
           "--natdnshostresolver1", "on",
           "--natdnsproxy1", "on",
+          "--ioapic", "on",
           "--nestedpaging", "off",
           "--ostype", "Ubuntu_64"
       ]
   end
 
   # Port forwarding
-  config.vm.network :forwarded_port, guest: 80,    host: 8000,  auto_correct: true
+  config.vm.network :forwarded_port, guest: 80,    host: 8800,  auto_correct: true
   config.vm.network :forwarded_port, guest: 443,   host: 44300, auto_correct: true
   config.vm.network :forwarded_port, guest: 3306,  host: 33060, auto_correct: true
+  config.vm.network :forwarded_port, guest: 4040,  host: 40400, auto_correct: true  # ngrok
   config.vm.network :forwarded_port, guest: 5432,  host: 54320, auto_correct: true
   config.vm.network :forwarded_port, guest: 6379,  host: 63790, auto_correct: true  # Redis
   config.vm.network :forwarded_port, guest: 8501,  host: 8501,  auto_correct: true  # Beanstalkd console
   config.vm.network :forwarded_port, guest: 8502,  host: 8502,  auto_correct: true  # Redis commander
   config.vm.network :forwarded_port, guest: 11211, host: 11212, auto_correct: true  # Memcached
   config.vm.network :forwarded_port, guest: 35729, host: 35729, auto_correct: true  # Livereload
-  config.vm.network :forwarded_port, guest: 1080,  host: 10800, auto_correct: true  # MailCatcher
+  config.vm.network :forwarded_port, guest: 1080,  host: 1080, auto_correct: true  # MailCatcher
 
   # Ansible provisioning
-  if $config['ansible_provision']
+  if $config['ansible']['provision']
     if Vagrant::Util::Platform.windows?
       config.vm.provision "shell" do |s|
         s.path = "./vagrant/provision/provision.sh"
-        s.args = [$config['box_ipaddress'], ($config['ansible_verbose']) ? "y" : "n"]
+        s.args = [$config['vm']['ip'], ($config['ansible']['verbose']) ? "y" : "n", "/vagrant/provision/playbook.yml"]
       end
     else
       config.vm.provision :ansible do |ansible|
         ansible.playbook = "vagrant/provision/playbook.yml"
         ansible.inventory_path = "vagrant/provision/inventories/dev"
         ansible.limit = "all"
-        if $config['ansible_verbose']
+        ansible.sudo = true
+        if $config['ansible']['verbose']
           ansible.verbose = "vv"
         end
       end

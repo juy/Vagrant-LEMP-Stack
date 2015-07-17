@@ -1,0 +1,11 @@
+---
+- name: Set server id
+  lineinfile: dest=/etc/blackfire/agent regexp='server-id=' line='server-id={{ blackfire.server_id }}'
+  #when:
+
+- name: Set server token
+  lineinfile: dest=/etc/blackfire/agent regexp='server-token=' line='server-token={{ blackfire.server_token }}'
+  #when:
+  notify:
+    - restart blackfire-agent
+    - restart php-fpm

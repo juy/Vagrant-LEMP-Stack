@@ -1,0 +1,4 @@
+---
+- name: Copy sources.list and update apt for mirrors
+  template: src="sources.list" dest="/etc/apt/sources.list" owner=root group=root mode=0644 backup=yes
+- apt: update_cache=yes

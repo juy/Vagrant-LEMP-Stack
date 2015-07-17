@@ -1,0 +1,15 @@
+---
+- name: "Vagrant LEMP Stack"
+  hosts: all
+  sudo: yes
+  gather_facts: no
+  pre_tasks:
+    - name: Load config file
+      include_vars: "{{ item }}"
+      with_items: config_file
+  roles:
+    - { role: test, tags: ["test"], when: "test.install" }
+    - sources
+    - common
+    - { role: git, when: "git.user_name and git.user_email" }
+    - { role: blackfire, when: "blackfire.server_id and blackfire.server_token" }

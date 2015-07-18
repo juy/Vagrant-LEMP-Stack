@@ -1,5 +1,6 @@
 # Application
 .vagrant
+vagrant/config.yml
 __*
 
 # IDE

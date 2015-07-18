@@ -3,6 +3,7 @@ vm:
   ip: "192.168.12.12"
   memory: 2048
   cpu: 1
+user: "vagrant"
 
 # Set the name of the VM
 machine_name: "vagrantlemp"
@@ -32,3 +33,6 @@ blackfire:
 test:
   install: false
   message: "Debug message test"
+
+# Shared project folder test
+shared_folder: false

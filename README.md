@@ -34,7 +34,7 @@ vagrant version
 
 **Clone**
 ```shell
-git clone https://github.com/juy/Vagrant-LEMP-Stack.git my-project
+git clone https://github.com/juy/Vagrant-LEMP-Stack.git new-project
 ```
 
 **Downlaod**
@@ -145,9 +145,12 @@ User        root
 Password    secret
 ```
 
-**Shell**
+**Shell-SSH**
 ```
-http://127.0.0.1:2222
+IP          127.0.0.1
+Port        2222
+User        vagrant
+Password    vagrant
 ```
 
 

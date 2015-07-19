@@ -140,41 +140,64 @@ http://127.0.0.1:2222
 ```
 
 
+## Update commands
+
+### Ubuntu update
+
+```shell
+apt-get update
+apt-get upgrade
+apt-get dist-upgrade
+```
+
+### Composer self and global package update
+
+```shell
+composer self-update
+composer global update
+```
+
+### Npm global package update
+```shell
+npm update -g 
+```
+
 ----------
 
 
-## Content
+## Provisioned Content
 - **OS**
 	- [x] Ubuntu Server 15.04 Vivid Vervet (64-bit) - [boxcutter/ubuntu1504](https://atlas.hashicorp.com/boxcutter/boxes/ubuntu1504) v1.1.0
 - **Base Packages**
-	- [x] Ansible
-	- [x] Nginx
-	- [x] PHP (php-fpm)
-	- [x] Git, git-flow, git-extras
+	- [x] Ansible 1.9.2
+	- [x] Nginx 1.8.0
+	- [x] PHP 5.6.11 (php-fpm)
+	- [x] Git 2.4.6, git-flow, git-extras
 	- [x] Composer
-	- [x] Ruby
-	- [x] HHVM (Only for composer speed up)
+	- [x] Ruby 2.1.2p95
+	- [x] HHVM 3.8.0 (Only for composer speed up)
+	- [x] VirtualBox Guest Additions 4.3.28
 - **Databases**
-	- [x] MySQL
-	- [x] PostgreSQL
-	- [x] SQLite
+	- [x] MySQL 5.6.24
+	- [x] PostgreSQL 9.4.4
+	- [x] SQLite 3.8.7.4
 - **In-Memory Stores**
-	- [x] Redis
-	- [x] Memcached
+	- [x] Redis 3.0.3
+	- [x] Memcached 1.4.14
 - **Utility **
-	- [x] Mailcatcher
-	- [x] Beanstalkd
-	- [x] Supervisord
-	- [x] Blackfire
-	- [x] Ngrok
+	- [x] Mailcatcher 0.6.1
+	- [x] Beanstalkd 1.10
+	- [x] Supervisord 3.0
+	- [x] Blackfire 0.27.0
+	- [x] Ngrok 2.0.19
 - **Asset tools**
-	- [x] node.js
-	- [x] bower
-	- [x] gulp
+	- [x] node.js 0.10.40, npm 1.4.28
+	- [x] bower 1.4.1
+	- [x] gulp 3.9.0
 - **Composer global packages**
-    - [x] Laravel Installer
-	- [x] Lumen Installer
-	- [x] Laravel Envoy
+    - [x] Laravel Installer 1.2.1
+	- [x] Lumen Installer 1.0.1
+	- [x] Laravel Envoy 1.0.24
 - **SSH tools**
 	- [x] htop
 	- [x] mytop

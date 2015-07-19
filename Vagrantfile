@@ -27,10 +27,8 @@ $config = YAML::load_file($config_file)
 Vagrant.configure(2) do |config|
 
   # Configure the box
-  #config.vm.box = "juysoft/vagrant-lemp-stack"
-  config.vm.box = "vagrant-lemp-stack"
-  #config.vm.box_url = "https://googledrive.com/host/0B4vG0MiAIMhANTNldExhZS0xMmM/vagrant-lemp-stack.box"
-  config.vm.box_check_update = false
+  config.vm.box = "juysoft/vagrant-lemp-stack"
+  #config.vm.box_check_update = false
   config.vm.boot_timeout = 60
 
   # Set the name of the VM. See: http://stackoverflow.com/a/17864388/100134

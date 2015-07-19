@@ -30,7 +30,18 @@ Verify that you have the recommended Vagrant version for Vagrant LEMP Stack.
 vagrant version
 ```
 
-### 1. Add Vagrant Box
+### 1. Clone or download Vagrant LEMP Stack GitHub Repository
+
+**Clone**
+```shell
+git clone https://github.com/juy/Vagrant-LEMP-Stack.git my-project
+```
+
+**Downlaod**
+https://github.com/juy/Vagrant-LEMP-Stack/archive/master.zip
+
+
+### 2. Add Vagrant Box
 Add the Vagrant LEMP Stack Box to Vagrant.
 
 ```shell
@@ -38,17 +49,17 @@ vagrant box add juysoft/vagrant-lemp-stack
 ```
 This will take several minutes so feel free to grab a coffee or a sandwich depending on your internet speed.
 
-### 2. Install vagrant-cachier plugin (optional)
+### 3. Install vagrant-cachier plugin (optional)
 The [vagrant-cachier](https://github.com/fgrehm/vagrant-cachier/) plugin helps you reduce the amount of coffee you drink while waiting for boxes to be provisioned by sharing a common package cache among similiar VM instances.
 
-### 3. Configure your Vagrant LEMP Stack Box
+### 4. Configure your Vagrant LEMP Stack Box
 Rename `vagrant/config.example.yml` file to `config.yml`. This is config file, fell free to change any variable.
 
 ```shell
 vagrant plugin install vagrant-cachier
 ```
 
-### 4. Run the virtual machine
+### 5. Run the virtual machine
 Run command inside Vagrant LEMP Stack.
 ```shell
 vagrant up && vagrant ssh
@@ -188,7 +199,7 @@ npm update -g
 	- [x] Mailcatcher 0.6.1
 	- [x] Beanstalkd 1.10
 	- [x] Supervisord 3.0
-	- [x] Blackfire 0.27.0
+	- [x] Blackfire profiler 0.27.0
 	- [x] Ngrok 2.0.19
 - **Asset tools**
 	- [x] node.js 0.10.40, npm 1.4.28

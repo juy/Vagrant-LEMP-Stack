@@ -49,6 +49,7 @@ vagrant plugin install vagrant-cachier
 ```
 
 ### 4. Run the virtual machine
+Run command inside Vagrant LEMP Stack.
 ```shell
 vagrant up && vagrant ssh
 ```
@@ -123,23 +124,20 @@ User        root        homestead
 Password    secret
 ```
 
-|               |               |
-| ------------- | ------------- |
-| IP            | 127.0.0.1     |
-| Port          | 33060         |
-| Database      | homestead     |
-| User          | root - homestead  |
-| Password      | secret        |
 
 **PostgreSQL credentials for remote access**
+```
+IP          127.0.0.1
+Port        54320
+Database    homestead
+User        root
+Password    secret
+```
 
-|               |               |
-| ------------- | ------------- |
-| IP            | 127.0.0.1     |
-| Port          | 54320         |
-| Database      | homestead     |
-| User          | root          |
-| Password      | secret        |
+**Shell**
+```
+http://127.0.0.1:2222
+```
 
 
 ----------

@@ -1,9 +1,8 @@
 ---
-- name: Set git username & user email
+- name: Set git username
   command: git config --global user.name {{ git.user_name }}
-  command: git config --global user.email {{ git.user_email }}
   sudo_user: "{{ user }}"
 
-#- name: Set git user email
-#  command: git config --global user.email {{ git.user_email }}
-#  sudo_user: "{{ user }}"
+- name: Set git user email
+  command: git config --global user.email {{ git.user_email }}
+  sudo_user: "{{ user }}"

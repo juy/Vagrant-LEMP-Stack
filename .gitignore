@@ -1,12 +1,14 @@
-# Application
+# Vagrant Files
 .vagrant
 vagrant/config.yml
+*.box
 __*
 
 # IDE
 .idea
-*.sublime-project
-*.sublime-workspace
+.idea/*
+*.sublime*
 
 # OS
 Thumbs.db
+.DS_Store

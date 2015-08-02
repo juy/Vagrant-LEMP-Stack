@@ -73,7 +73,7 @@ We don't use shared folder for project, and for now not put any code on Vagrantf
 Put your project in `~/www` directory. For example `~/www/mylaravel`.
 
 ### How to access them on browser
-`http://mylaravel.app:8800` or `http://mywordpress.site:8800`, we explain this on "wildcard system" section. Web port is `8800`, we keep different from 8000, because sometimes maybe we run "php artisan serve" outside virtual machine.
+`http://mylaravel.app:8800` or `http://mywordpress.site:8800`, we explain this on "wildcard system" section. Web port is `8800`, we keep different from 8000, because sometimes maybe we run `php artisan serve` outside virtual machine.
 
 
 ### Wildcard system

@@ -76,7 +76,7 @@ Put your project in virtual machine `~/www` directory. For example `~/www/mylara
 
 ### How to access them on browser
 
-`http://mylaravel.app:8800` or `http://mywordpress.site:8800`, we explain this on "wildcard system" section. Web port is `8800`, we keep different from 8000, because sometimes maybe we run `php artisan serve` outside virtual machine.
+`http://mylaravel.app:8800` or `http://mylaravel.site:8800`, we explain this on "wildcard system" section. Web port is `8800`, we keep different from 8000, because sometimes maybe we run `php artisan serve` outside virtual machine.
 
 
 ### Wildcard system

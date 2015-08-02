@@ -68,7 +68,7 @@ vagrant up && vagrant ssh
 
 #### Small note for vagrant shared folders
 
-We don't use shared folder for project, and for now not put any code on Vagrantfile for this. We use SFTP remote access on PhpStorm.
+We don't use shared folder for project, and for now not put any code on Vagrantfile for this. We use SFTP remote access on PhpStorm IDE.
 
 ### Where put project files
 

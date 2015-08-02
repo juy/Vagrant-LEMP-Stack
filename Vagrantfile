@@ -68,13 +68,6 @@ Vagrant.configure(2) do |config|
   # Shared folder
   config.vm.synced_folder "./vagrant", "/vagrant", type: "nfs"
 
-
-  # Shared project folder test
-  if $config['shared_folder']
-    config.vm.synced_folder "./share-test", "~/share-test", type: "nfs"
-  end
-
-
   # Virtualbox settings
   config.vm.provider :virtualbox do |v|
       v.customize [

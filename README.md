@@ -1,4 +1,4 @@
-{:toc}
+:with_toc_data
 
 # Vagrant LEMP Stack
 

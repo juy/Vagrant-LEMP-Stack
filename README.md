@@ -1,3 +1,5 @@
+{:toc}
+
 # Vagrant LEMP Stack
 
 > This readme file is under development 

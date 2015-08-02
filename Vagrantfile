@@ -36,14 +36,13 @@ Vagrant.configure(2) do |config|
   end
 
   # https://github.com/dotless-de/vagrant-vbguest
-  config.vbguest.auto_update = false
+  if Vagrant.has_plugin?("vbguest")
+    config.vbguest.auto_update = false
+  end
 
   # SSH settings
   #config.ssh.username = "vagrant"
   #config.ssh.password = "vagrant"
-
-  # https://github.com/dotless-de/vagrant-vbguest
-  config.vbguest.auto_update = false
 
   # Private network IP
   config.vm.network :private_network, ip: $config['vm']['ip']

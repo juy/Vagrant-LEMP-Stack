@@ -52,12 +52,13 @@ This will take several minutes so feel free to grab a coffee or a sandwich depen
 ### 3. Install vagrant-cachier plugin (optional)
 The [vagrant-cachier](https://github.com/fgrehm/vagrant-cachier/) plugin helps you reduce the amount of coffee you drink while waiting for boxes to be provisioned by sharing a common package cache among similiar VM instances.
 
-### 4. Configure your Vagrant LEMP Stack Box
-Rename `vagrant/config.example.yml` file to `config.yml`. This is config file, fell free to change any variable.
-
 ```shell
 vagrant plugin install vagrant-cachier
 ```
+
+### 4. Configure your Vagrant LEMP Stack Box
+Rename `vagrant/config.example.yml` file to `config.yml`. This is config file, fell free to change any variable.
+
 
 ### 5. Run the virtual machine
 Run command inside Vagrant LEMP Stack.

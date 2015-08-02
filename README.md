@@ -87,6 +87,8 @@ There is two domain extension, `.app` and `.site`. `.app` extension is usable fo
 
 Domain name is same as project directory name, our before example is `mylaravel`. If we use `http://mylaravel.app:8800`, Nginx look a `public/` directory, if we use `http://mylaravel.site:8800`, Nginx dont look `public/` directory.
 
+**Important:**
+
 For windows we need add every single project on `C:\Windows\System32\drivers\etc\hosts` file, example:
 
 ```
@@ -95,7 +97,7 @@ For windows we need add every single project on `C:\Windows\System32\drivers\etc
 127.0.0.1    wordpress.site  # http://wordpress.site:8800
 ```
 
-Shema of wildcard system
+**Shema of wildcard system**
 ```
 *.app:8800 -> www/*/public
 *.site:8800 -> www/*

@@ -1,5 +1,3 @@
-:with_toc_data
-
 # Vagrant LEMP Stack
 
 > This readme file is under development 

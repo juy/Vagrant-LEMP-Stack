@@ -1,7 +1,5 @@
 # Vagrant LEMP Stack
 
-> This readme file is under development 
-
 #### Help support this project
 If you'd like to support this and other our creations projects, donate via [PayPal][paypal-donate-url].
 

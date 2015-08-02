@@ -38,7 +38,7 @@ git clone https://github.com/juy/Vagrant-LEMP-Stack.git new-project
 https://github.com/juy/Vagrant-LEMP-Stack/archive/master.zip
 
 
-### 2. Vagran kutumuzu ekleyin
+### 2. Vagrant kutumuzu ekleyin
 Vagrant LEMP Paketi için hazırladığımız ubuntu kutusunu Vagrant sistemine ekleyin.
 
 ```shell

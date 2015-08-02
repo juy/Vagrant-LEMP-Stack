@@ -15,7 +15,6 @@ A development platform in a box, with everything you would need to develop PHP/L
 
 
 ## Dependencies
-
 * [Vagrant](http://www.vagrantup.com/downloads.html) `1.5.0`+ (Use `vagrant version` to check your version)
 * [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
 
@@ -210,7 +209,7 @@ npm update -g
 - **In-Memory Stores**
 	- [x] Redis 3.0.3
 	- [x] Memcached 1.4.14
-- **Utility **
+- **Utility**
 	- [x] Mailcatcher 0.6.1
 	- [x] Beanstalkd 1.10
 	- [x] Supervisord 3.0

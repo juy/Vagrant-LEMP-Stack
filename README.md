@@ -19,7 +19,7 @@ A development platform in a box, with everything you would need to develop PHP/L
 ## Dependencies
 
 * [Vagrant](http://www.vagrantup.com/downloads.html) `1.5.0`+ (Use `vagrant version` to check your version)
-* [Virtualbox](https://www.virtualbox.org/wiki/Downloads) (We use Virtualbox 4.3.28 for this project)
+* [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
 
 
 

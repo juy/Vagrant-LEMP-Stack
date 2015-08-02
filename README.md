@@ -72,7 +72,7 @@ We don't use shared folder for project, and for now not put any code on Vagrantf
 
 ### Where put project files
 
-Put your project in `~/www` directory. For example `~/www/mylaravel`.
+Put your project in virtual machine `~/www` directory. For example `~/www/mylaravel`.
 
 ### How to access them on browser
 

@@ -9,6 +9,13 @@ If you'd like to support this and other our creations projects, donate via [PayP
 ----------
 
 
+## Contributing
+
+### Issues, bug tracker
+You can open issue on [Vagrant-LEMP-Stack-setter](https://github.com/juy/Vagrant-LEMP-Stack-setter/issues) repo issue page. We have two repo, one for create a ubuntu box and provision it, other is customize a development ready box (user part).
+
+
+
 ## What is Vagrant LEMP Stack
 A development platform in a box, with everything you would need to develop PHP/Laravel websites.
 

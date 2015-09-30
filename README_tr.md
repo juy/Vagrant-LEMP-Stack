@@ -9,6 +9,13 @@ Bu ve diğer projelerimize destek vermek isterseniz, [PayPal][paypal-donate-url]
 ----------
 
 
+## Katkıda bulunmak
+
+### Sorunlar, hata raporları
+Hata raporlarınızı [Vagrant-LEMP-Stack-setter](https://github.com/juy/Vagrant-LEMP-Stack-setter/issues) deposunun hata raporları sayfasına gönderebilirsiniz. Provisyon işlemleri o depoda gerçekleştiği için o deponun hata bildirim sayfasını kullanmaktayız.
+
+
+
 ## Vagrant LEMP Paketi nedir
 PHP web sayfaları ve laravel projeleri geliştirmek için gereken her şeyi içeren hazır bir geliştirme platformudur.
 

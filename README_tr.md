@@ -74,15 +74,15 @@ vagrant up && vagrant ssh
 
 ## Web ve proje kullanımı
 
-#### Vagrant paylaşımlı dizin hakkında küçük bir not
+#### *Vagrant paylaşımlı dizin hakkında küçük bir not*
 
-Biz projelerimizde vagrant için paylaşımlı dizin kullanmıyoruz, windows üzerinde bu kullanım oldukça yavaş çalışmakta. PhpStorm IDE üzerinden SFTP ile uzaktan bağlantı yapıyoruz.
+> Projelerimiz için vagrant paylaşımlı dizin kullanmıyoruz, şimdilik Vagrantfile dosyası üzerine de bununla ilgili bir kod koymadık. PhpStorm IDE üzerinden SFTP ile uzaktan bağlantı yapıyoruz. Artisan, composer, npm, bower, gulp gibi tüm komutları sunucu üzerinden çalıştırıyoruz.
 
 ### Proje dosyaları nereye konulmalı
 
 Proje dosyalarınızı sanal sunucu içindeki `~/www`  dizini içerisine projenize göre bir adı olan bir dizin içine koyabilirsiniz. Örneğin `~/www/mylaravel`.
 
-### Projeleri tarayıcıdan nasıl açacağız
+### Projeleri web tarayıcıdan nasıl açacağız
 
 Önceki örnek proje dizin adına göre `http://mylaravel.app:8800` veya `http://mylaravel.site:8800` ile erişebiliriz, bu özel joker erişim türünü bir sonraki başlık altında açıklayacağız. Web portunu 8000 numarasından özellikle farklı tuttuk ve `8800` olarak kullandık, çünkü sanal makine dışından `php artisan serve` komutu 8000 numarı portu kullanır, olası bir çakışma yaşanmasını istemedik.
 

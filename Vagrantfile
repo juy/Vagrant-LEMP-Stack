@@ -36,7 +36,7 @@ Vagrant.configure(2) do |config|
   end
 
   # https://github.com/dotless-de/vagrant-vbguest
-  if Vagrant.has_plugin?("vbguest")
+  if Vagrant.has_plugin?("vagrant-vbguest")
     config.vbguest.auto_update = false
   end
 

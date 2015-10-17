@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 # Variables
-BOX_IP=$1;
-VERBOSE=$2;
-ANSIBLE_PLAYBOOK=$3
+ANSIBLE_PLAYBOOK=$1
+BOX_IP=$2;
+VERBOSE=$3;
 
 # Ansible provision
 

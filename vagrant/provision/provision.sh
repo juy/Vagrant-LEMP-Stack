@@ -7,6 +7,7 @@ VERBOSE=$3;
 
 # Ansible provision
 
+# Setup hosts file; only need to show correct ip address on provisioning.
 sudo rm -rf /etc/ansible/hosts
 sudo cp /vagrant/provision/inventories/dev /etc/ansible/hosts -f
 sudo chmod 666 /etc/ansible/hosts

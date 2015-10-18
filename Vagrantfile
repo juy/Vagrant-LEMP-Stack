@@ -23,7 +23,7 @@ $config = YAML::load_file($config_file)
 Vagrant.configure(2) do |config|
 
   # Configure the box
-  config.vm.box = $config['vm']['box']
+  config.vm.box = $config['box']['name']
   #config.vm.box_check_update = false
   config.vm.boot_timeout = 60
 

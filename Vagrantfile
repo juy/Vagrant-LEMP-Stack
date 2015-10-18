@@ -101,7 +101,7 @@ Vagrant.configure(2) do |config|
   if $config['ansible']['provision']
     if Vagrant::Util::Platform.windows?
       config.vm.provision "shell" do |s|
-        s.path = "./vagrant/provision/script/provision.sh"
+        s.path = "./vagrant/provision/script/ansible_windows.sh"
         s.args = ["/vagrant/provision/ansible/playbook.yml", $config['vm']['ip'], ($config['ansible']['verbose']) ? "y" : "n"]
       end
     else

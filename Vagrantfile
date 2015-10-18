@@ -101,13 +101,13 @@ Vagrant.configure(2) do |config|
   if $config['ansible']['provision']
     if Vagrant::Util::Platform.windows?
       config.vm.provision "shell" do |s|
-        s.path = "./vagrant/provision/provision.sh"
-        s.args = ["/vagrant/provision/playbook.yml", $config['vm']['ip'], ($config['ansible']['verbose']) ? "y" : "n"]
+        s.path = "./vagrant/provision/script/provision.sh"
+        s.args = ["/vagrant/provision/ansible/playbook.yml", $config['vm']['ip'], ($config['ansible']['verbose']) ? "y" : "n"]
       end
     else
       config.vm.provision :ansible do |ansible|
-        ansible.playbook = "vagrant/provision/playbook.yml"
-        ansible.inventory_path = "vagrant/provision/inventories/dev"
+        ansible.playbook = "vagrant/provision/ansible/playbook.yml"
+        ansible.inventory_path = "vagrant/provision/ansible/inventories/dev"
         ansible.limit = "all"
         ansible.sudo = true
         if $config['ansible']['verbose']

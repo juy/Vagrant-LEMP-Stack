@@ -3,6 +3,8 @@
 # See the readme file (README.md) for more information.
 # Contribute to this project at : https://github.com/juy/Vagrant-LEMP-Stack-setter
 
+require 'yaml'
+
 # Check vagrant version
 if Vagrant::VERSION < "1.5.0"
   puts "Please upgrade to vagrant 1.5+: "
@@ -20,7 +22,6 @@ if !File.file?($config_file)
 end
 
 # Include config from config file
-require 'yaml'
 $config = YAML::load_file($config_file)
 
 # Vagrant configure

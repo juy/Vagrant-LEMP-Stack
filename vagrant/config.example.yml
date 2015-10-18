@@ -6,6 +6,7 @@ vm:
 
 box:
   name: "juysoft/vagrant-lemp-stack"
+  version: "1.0.0"
 
 user: "vagrant"
 

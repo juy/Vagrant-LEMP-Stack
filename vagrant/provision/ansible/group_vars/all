@@ -1,5 +1,5 @@
 ---
-config_file: "../config.yml"
+config_file: "../../config.yml"
 ubuntu_name: "vivid"
 home_dir: "/home/{{ user }}"
 srv_dir: "/home/{{ user }}/srv"

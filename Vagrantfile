@@ -57,8 +57,6 @@ Vagrant.configure(2) do |config|
       config.cache.enable :bower
       config.cache.enable :gem
       #config.cache.enable :generic, { "wget" => { cache_dir: "/var/cache/wget" } }
-      #config.cache.synced_folder_opts = { type: :nfs }
-      #config.cache.synced_folder_opts = { type: :nfs, mount_options: ['rw', 'vers=3', 'tcp', 'nolock'] }
     end
   end
 

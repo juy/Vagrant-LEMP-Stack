@@ -1,4 +1,0 @@
-deb mirror://mirrors.ubuntu.com/mirrors.txt {{ ubuntu_name }} main restricted universe multiverse
-deb mirror://mirrors.ubuntu.com/mirrors.txt {{ ubuntu_name }}-updates main restricted universe multiverse
-deb mirror://mirrors.ubuntu.com/mirrors.txt {{ ubuntu_name }}-backports main restricted universe multiverse
-deb mirror://mirrors.ubuntu.com/mirrors.txt {{ ubuntu_name }}-security main restricted universe multiverse

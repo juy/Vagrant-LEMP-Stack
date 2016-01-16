@@ -1,6 +1,5 @@
-# EditorConfig helps developers define and maintain consistent
-# coding styles between different editors and IDEs
-# editorconfig.org
+; This file is for unifying the coding style for different editors and IDEs.
+; More information at http://editorconfig.org
 
 root = true
 

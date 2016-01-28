@@ -4,10 +4,12 @@ vm:
   memory: 2048
   cpu: 1
 
+# Vagrant box
 box:
   name: "juysoft/vagrant-lemp-stack"
   version: "1.0.0"
 
+# User name for VM
 user: "vagrant"
 
 # Set the name of the VM

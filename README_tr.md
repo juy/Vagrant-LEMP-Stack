@@ -1,8 +1,6 @@
 # Vagrant LEMP Paketi
 
-
 ----------
-
 
 ## Katkıda bulunmak
 
@@ -10,20 +8,14 @@
 
 Hata raporlarınızı [Vagrant-LEMP-Stack-setter](https://github.com/juy/Vagrant-LEMP-Stack-setter/issues) deposunun hata raporları sayfasına gönderebilirsiniz. Provisyon işlemleri o depoda gerçekleştiği için o deponun hata bildirim sayfasını kullanmaktayız.
 
-
-
 ## Vagrant LEMP Paketi nedir
 
 PHP web sayfaları ve laravel projeleri geliştirmek için gereken her şeyi içeren hazır bir geliştirme platformudur.
-
-
 
 ## Bağımlılıklar
 
 * [Vagrant](http://www.vagrantup.com/downloads.html) `1.5.0`+ (Sürüm kontrolü için `vagrant version` komutunu kullanabilirsiniz)
 * [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
-
-
 
 ## Kurulum
 
@@ -50,6 +42,7 @@ Vagrant LEMP Paketi için hazırladığımız ubuntu kutusunu Vagrant sistemine 
 ```shell
 vagrant box add juysoft/vagrant-lemp-stack
 ```
+
 Bu işlem internet hızınıza bağlı olarak biraz zaman alabilir, bu yüzden yanınıza bir kahve veya sandviç almak isteyebilirsiniz. 
 
 ### 3. vagrant-cachier eklentisi kurulumu (isteğe bağlı)
@@ -64,7 +57,6 @@ vagrant plugin install vagrant-cachier
 
 `vagrant/config.example.yml` dosyasını `config.yml` olarak yeniden adlandırın. Bu dosya ayar dosyasıdır, içeriğini kontrol edip gereken değişiklikleri yapabilirsiniz.
 
-
 ### 5. Sanal makineyi çalıştırın
 
 Vagrant LEMP Paketi dizininde iken aşağıdaki komutu komut istemciniz ile çalıştırın. Bu komut ile sanal sunucu çalışacak ve sizi sanal sunucu içindeki shell komut satırına bağlayacaktır.
@@ -72,7 +64,6 @@ Vagrant LEMP Paketi dizininde iken aşağıdaki komutu komut istemciniz ile çal
 ```shell
 vagrant up && vagrant ssh
 ```
-
 
 ## Web ve proje kullanımı
 
@@ -114,7 +105,6 @@ Windows bilgisayarlarda kullanacağımız her bir projenin alan adını `C:\Wind
 *.site:8800 -> www/*
 ```
 
-
 ## Erişim ve Portlar
 
 **Basit gösterge paneli**
@@ -149,7 +139,6 @@ User        root        homestead
 Password    secret
 ```
 
-
 **PostgreSQL, uzaktan erişim için bilgiler**
 ```
 IP          127.0.0.1
@@ -179,7 +168,6 @@ vagrant box outdated
 vagrant box update
 ```
 
-
 ## Sanal makine güncelleme komutları
 
 Bu komutlar sanal ubuntu sistemi içindir, `vagrant ssh` ile bağlanılmalıdır.
@@ -206,7 +194,6 @@ npm update -g
 ```
 
 ----------
-
 
 ## Sağlanan İçerik
 
@@ -253,7 +240,6 @@ npm update -g
 - **Web arayüz araçları**
 	- [x] Beanstalkd console - https://github.com/ptrofimov/beanstalk_console
 	- [x] Redis Commander - https://github.com/joeferner/redis-commander
-
 
 ### Lisans
 

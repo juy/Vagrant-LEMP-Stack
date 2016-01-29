@@ -1,8 +1,6 @@
 # Vagrant LEMP Stack
 
-
 ----------
-
 
 ## Contributing
 
@@ -10,20 +8,14 @@
 
 You can open issue on [Vagrant-LEMP-Stack-setter](https://github.com/juy/Vagrant-LEMP-Stack-setter/issues) repo issue page. We have two repo, one for create a ubuntu box and provision it, other is customize a development ready box (user part).
 
-
-
 ## What is Vagrant LEMP Stack
 
 A development platform in a box, with everything you would need to develop PHP/Laravel websites.
-
-
 
 ## Dependencies
 
 * [Vagrant](http://www.vagrantup.com/downloads.html) `1.5.0`+ (Use `vagrant version` to check your version)
 * [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
-
-
 
 ## Installation
 
@@ -43,7 +35,6 @@ git clone https://github.com/juy/Vagrant-LEMP-Stack.git new-project
 **Downlaod**
 https://github.com/juy/Vagrant-LEMP-Stack/archive/master.zip
 
-
 ### 2. Add Vagrant Box
 
 Add the Vagrant LEMP Stack Box to Vagrant.
@@ -51,6 +42,7 @@ Add the Vagrant LEMP Stack Box to Vagrant.
 ```shell
 vagrant box add juysoft/vagrant-lemp-stack
 ```
+
 This will take several minutes so feel free to grab a coffee or a sandwich depending on your internet speed.
 
 ### 3. Install vagrant-cachier plugin (optional)
@@ -65,14 +57,12 @@ vagrant plugin install vagrant-cachier
 
 Rename `vagrant/config.example.yml` file to `config.yml`. This is config file, fell free to change any variable.
 
-
 ### 5. Run the virtual machine
 
 Run command inside Vagrant LEMP Stack.
 ```shell
 vagrant up && vagrant ssh
 ```
-
 
 ## Web, project usage
 
@@ -112,7 +102,6 @@ For windows we need add every single project on `C:\Windows\System32\drivers\etc
 *.site:8800 -> www/*
 ```
 
-
 ## Access and Ports
 
 **Simple dashboard**
@@ -147,7 +136,6 @@ User        root        homestead
 Password    secret
 ```
 
-
 **PostgreSQL credentials for remote access**
 ```
 IP          127.0.0.1
@@ -165,7 +153,6 @@ User        vagrant
 Password    vagrant
 ```
 
-
 ## Vagrant box update commands
 
 **Check outdated box**
@@ -177,7 +164,6 @@ vagrant box outdated
 ```shell
 vagrant box update
 ```
-
 
 ## Virtual machine update commands
 
@@ -205,7 +191,6 @@ npm update -g
 ```
 
 ----------
-
 
 ## Provisioned Content
 
@@ -252,7 +237,6 @@ npm update -g
 - **Web GUI tools**
 	- [x] Beanstalkd console - https://github.com/ptrofimov/beanstalk_console
 	- [x] Redis Commander - https://github.com/joeferner/redis-commander
-
 
 ### License
 

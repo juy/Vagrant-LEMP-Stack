@@ -207,37 +207,38 @@ npm update -g
 
 ## Sağlanan İçerik
 - **OS**
-	- [x] Ubuntu Server 15.04 Vivid Vervet (64-bit) - [boxcutter/ubuntu1504](https://atlas.hashicorp.com/boxcutter/boxes/ubuntu1504) v1.1.0
+	- [x] Ubuntu Server 15.04 Vivid Vervet (64-bit) - [boxcutter/ubuntu1504](https://atlas.hashicorp.com/boxcutter/boxes/ubuntu1504)
 - **Temel/Çekirdek paketler**
-	- [x] Ansible 1.9.2
-	- [x] Nginx 1.8.0
-	- [x] PHP 5.6.11 (php-fpm)
-	- [x] Git 2.4.6, git-flow, git-extras
+	- [x] Ansible
+	- [x] Nginx
+	- [x] PHP 5.6.* (php-fpm)
+	- [x] Git, git-flow, git-extras
 	- [x] Composer
-	- [x] Ruby 2.1.2p95
-	- [x] HHVM 3.8.0 (Only for composer speed up)
-	- [x] VirtualBox Guest Additions 4.3.28
+	- [x] Ruby
+	- [x] HHVM (Only for composer speed up)
+	- [x] VirtualBox Guest Additions
 - **Veritabanları**
-	- [x] MySQL 5.6.24
-	- [x] PostgreSQL 9.4.4
-	- [x] SQLite 3.8.7.4
+	- [x] MySQL 5.6.*
+	- [x] PostgreSQL 9.4.*
+	- [x] SQLite
 - **Hafızada veri tutma**
-	- [x] Redis 3.0.3
-	- [x] Memcached 1.4.14
+	- [x] Redis
+	- [x] Memcached
 - **Araçlar**
-	- [x] Mailcatcher 0.6.1
-	- [x] Beanstalkd 1.10
-	- [x] Supervisord 3.0
-	- [x] Blackfire profiler 0.27.0
-	- [x] Ngrok 2.0.19
+	- [x] Mailcatcher
+	- [x] Beanstalkd
+	- [x] Supervisord
+	- [x] Blackfire profiler
+	- [x] Ngrok
 - **Varlık araçları**
-	- [x] node.js 0.10.40, npm 1.4.28
-	- [x] bower 1.4.1
-	- [x] gulp 3.9.0
+	- [x] node.js 5.5.*, npm
+	- [x] bower
+	- [x] gulp
 - **Composer genel paketleri**
-    - [x] Laravel Installer 1.2.1
-	- [x] Lumen Installer 1.0.1
-	- [x] Laravel Envoy 1.0.24
+    - [x] Laravel installer
+	- [x] Lumen installer
+	- [x] Spark installer
+	- [x] Laravel envoy
 - **SSH araçları**
 	- [x] htop
 	- [x] mytop
@@ -252,7 +253,6 @@ npm update -g
 
 ### Lisans
 Açık kaynaklı olan bu proje [MIT license][mit-url] ile lisanslanmıştır.
-
 
 
 [paypal-donate-img]: https://img.shields.io/badge/PayPal-donate-brightgreen.svg?style=flat-square

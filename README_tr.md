@@ -1,10 +1,5 @@
 # Vagrant LEMP Paketi
 
-#### Projeyi destekleyin
-Bu ve diğer projelerimize destek vermek isterseniz, [PayPal][paypal-donate-url] üzerinden bağışta bulunabilirsiniz.
-
-[![Support via PayPal][paypal-donate-img]][paypal-donate-url]
-
 
 ----------
 
@@ -12,22 +7,26 @@ Bu ve diğer projelerimize destek vermek isterseniz, [PayPal][paypal-donate-url]
 ## Katkıda bulunmak
 
 ### Sorunlar, hata raporları
+
 Hata raporlarınızı [Vagrant-LEMP-Stack-setter](https://github.com/juy/Vagrant-LEMP-Stack-setter/issues) deposunun hata raporları sayfasına gönderebilirsiniz. Provisyon işlemleri o depoda gerçekleştiği için o deponun hata bildirim sayfasını kullanmaktayız.
 
 
 
 ## Vagrant LEMP Paketi nedir
+
 PHP web sayfaları ve laravel projeleri geliştirmek için gereken her şeyi içeren hazır bir geliştirme platformudur.
 
 
 
 ## Bağımlılıklar
+
 * [Vagrant](http://www.vagrantup.com/downloads.html) `1.5.0`+ (Sürüm kontrolü için `vagrant version` komutunu kullanabilirsiniz)
 * [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
 
 
 
 ## Kurulum
+
 Vagrant LEMP Paketi için tavsiye edilen Vagrant sürümüne sahip olduğunuza emin olunuz.
 
 ```shell
@@ -44,8 +43,8 @@ git clone https://github.com/juy/Vagrant-LEMP-Stack.git new-project
 **İndirme**
 https://github.com/juy/Vagrant-LEMP-Stack/archive/master.zip
 
-
 ### 2. Vagrant kutumuzu ekleyin
+
 Vagrant LEMP Paketi için hazırladığımız ubuntu kutusunu Vagrant sistemine ekleyin.
 
 ```shell
@@ -54,6 +53,7 @@ vagrant box add juysoft/vagrant-lemp-stack
 Bu işlem internet hızınıza bağlı olarak biraz zaman alabilir, bu yüzden yanınıza bir kahve veya sandviç almak isteyebilirsiniz. 
 
 ### 3. vagrant-cachier eklentisi kurulumu (isteğe bağlı)
+
 [vagrant-cachier](https://github.com/fgrehm/vagrant-cachier/) eklentisi provizyon sırasında kullanılan genel paketler için ön-bellek özelliği sunar. İsteğe bağlı olarak kurabilirsiniz. Ancak Vagrant LEMP Paketi kurulum sırasında provizyon yapmaz, zaten hazırdır.
 
 ```shell
@@ -61,10 +61,12 @@ vagrant plugin install vagrant-cachier
 ```
 
 ### 4. Vagrant LEMP Paket ayarlarınızı yapın
+
 `vagrant/config.example.yml` dosyasını `config.yml` olarak yeniden adlandırın. Bu dosya ayar dosyasıdır, içeriğini kontrol edip gereken değişiklikleri yapabilirsiniz.
 
 
 ### 5. Sanal makineyi çalıştırın
+
 Vagrant LEMP Paketi dizininde iken aşağıdaki komutu komut istemciniz ile çalıştırın. Bu komut ile sanal sunucu çalışacak ve sizi sanal sunucu içindeki shell komut satırına bağlayacaktır.
 
 ```shell
@@ -85,7 +87,6 @@ Proje dosyalarınızı sanal sunucu içindeki `~/www`  dizini içerisine projeni
 ### Projeleri web tarayıcıdan nasıl açacağız
 
 Önceki örnek proje dizin adına göre `http://mylaravel.app:8800` veya `http://mylaravel.site:8800` ile erişebiliriz, bu özel joker erişim türünü bir sonraki başlık altında açıklayacağız. Web portunu 8000 numarasından özellikle farklı tuttuk ve `8800` olarak kullandık, çünkü sanal makine dışından `php artisan serve` komutu 8000 numarı portu kullanır, olası bir çakışma yaşanmasını istemedik.
-
 
 ### Joker sistemi, projelerin web erişimi için
 
@@ -180,6 +181,7 @@ vagrant box update
 
 
 ## Sanal makine güncelleme komutları
+
 Bu komutlar sanal ubuntu sistemi içindir, `vagrant ssh` ile bağlanılmalıdır.
 
 ### Ubuntu güncelleme
@@ -198,6 +200,7 @@ composer global update
 ```
 
 ### Npm genel paketleri güncelleme
+
 ```shell
 npm update -g 
 ```
@@ -206,6 +209,7 @@ npm update -g
 
 
 ## Sağlanan İçerik
+
 - **OS**
 	- [x] Ubuntu Server 15.04 Vivid Vervet (64-bit) - [boxcutter/ubuntu1504](https://atlas.hashicorp.com/boxcutter/boxes/ubuntu1504)
 - **Temel/Çekirdek paketler**
@@ -252,10 +256,9 @@ npm update -g
 
 
 ### Lisans
+
 Açık kaynaklı olan bu proje [MIT license][mit-url] ile lisanslanmıştır.
 
 
-[paypal-donate-img]: https://img.shields.io/badge/PayPal-donate-brightgreen.svg?style=flat-square
-[paypal-donate-url]: http://bit.ly/donateAngelside
 
 [mit-url]: http://opensource.org/licenses/MIT

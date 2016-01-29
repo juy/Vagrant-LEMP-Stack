@@ -1,10 +1,5 @@
 # Vagrant LEMP Stack
 
-#### Help support this project
-If you'd like to support this and other our creations projects, donate via [PayPal][paypal-donate-url].
-
-[![Support via PayPal][paypal-donate-img]][paypal-donate-url]
-
 
 ----------
 
@@ -12,22 +7,26 @@ If you'd like to support this and other our creations projects, donate via [PayP
 ## Contributing
 
 ### Issues, bug tracker
+
 You can open issue on [Vagrant-LEMP-Stack-setter](https://github.com/juy/Vagrant-LEMP-Stack-setter/issues) repo issue page. We have two repo, one for create a ubuntu box and provision it, other is customize a development ready box (user part).
 
 
 
 ## What is Vagrant LEMP Stack
+
 A development platform in a box, with everything you would need to develop PHP/Laravel websites.
 
 
 
 ## Dependencies
+
 * [Vagrant](http://www.vagrantup.com/downloads.html) `1.5.0`+ (Use `vagrant version` to check your version)
 * [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
 
 
 
 ## Installation
+
 Verify that you have the recommended Vagrant version for Vagrant LEMP Stack.
 
 ```shell
@@ -46,6 +45,7 @@ https://github.com/juy/Vagrant-LEMP-Stack/archive/master.zip
 
 
 ### 2. Add Vagrant Box
+
 Add the Vagrant LEMP Stack Box to Vagrant.
 
 ```shell
@@ -54,6 +54,7 @@ vagrant box add juysoft/vagrant-lemp-stack
 This will take several minutes so feel free to grab a coffee or a sandwich depending on your internet speed.
 
 ### 3. Install vagrant-cachier plugin (optional)
+
 The [vagrant-cachier](https://github.com/fgrehm/vagrant-cachier/) plugin helps you reduce the amount of coffee you drink while waiting for boxes to be provisioned by sharing a common package cache among similiar VM instances.
 
 ```shell
@@ -61,10 +62,12 @@ vagrant plugin install vagrant-cachier
 ```
 
 ### 4. Configure your Vagrant LEMP Stack Box
+
 Rename `vagrant/config.example.yml` file to `config.yml`. This is config file, fell free to change any variable.
 
 
 ### 5. Run the virtual machine
+
 Run command inside Vagrant LEMP Stack.
 ```shell
 vagrant up && vagrant ssh
@@ -84,7 +87,6 @@ Put your project in virtual machine `~/www` directory. For example `~/www/mylara
 ### How to access them on web browser
 
 `http://mylaravel.app:8800` or `http://mylaravel.site:8800`, we explain this on "wildcard system" section. Web port is `8800`, we keep different from 8000, because sometimes maybe we run `php artisan serve` outside virtual machine.
-
 
 ### Wildcard system
 
@@ -163,6 +165,7 @@ User        vagrant
 Password    vagrant
 ```
 
+
 ## Vagrant box update commands
 
 **Check outdated box**
@@ -177,6 +180,7 @@ vagrant box update
 
 
 ## Virtual machine update commands
+
 This commands for virtual ubuntu, need connect via ssh or `vagrant ssh`
 
 ### Ubuntu update
@@ -195,6 +199,7 @@ composer global update
 ```
 
 ### Npm global package update
+
 ```shell
 npm update -g 
 ```
@@ -203,6 +208,7 @@ npm update -g
 
 
 ## Provisioned Content
+
 - **OS**
 	- [x] Ubuntu Server 15.04 Vivid Vervet (64-bit) - [boxcutter/ubuntu1504](https://atlas.hashicorp.com/boxcutter/boxes/ubuntu1504)
 - **Base Packages**
@@ -249,10 +255,9 @@ npm update -g
 
 
 ### License
+
 This project is open-sourced software licensed under the [MIT license][mit-url].
 
 
-[paypal-donate-img]: https://img.shields.io/badge/PayPal-donate-brightgreen.svg?style=flat-square
-[paypal-donate-url]: http://bit.ly/donateAngelside
 
 [mit-url]: http://opensource.org/licenses/MIT

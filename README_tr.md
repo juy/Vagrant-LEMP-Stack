@@ -206,7 +206,7 @@ npm update -g
 	- [x] Git, git-flow, git-extras
 	- [x] Composer
 	- [x] Ruby
-	- [x] HHVM (Only for composer speed up)
+	- [x] HHVM ("composerh" komutu ile composer'i hhvm ile kullanmak için)
 	- [x] VirtualBox Guest Additions
 - **Veritabanları**
 	- [x] MySQL 5.6.*

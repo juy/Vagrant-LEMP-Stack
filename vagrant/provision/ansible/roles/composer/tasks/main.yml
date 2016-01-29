@@ -1,0 +1,12 @@
+---
+
+- name: Add GitHub OAuth token for Composer (if configured)
+  template:
+    src: "auth.json.j2"
+    dest: "{{ composer_home_path }}/auth.json"
+    owner: "{{ composer_home_owner }}"
+    group: "{{ composer_home_group }}"
+  when: composer_github_oauth_token != ''
+
+- include: global-require.yml
+  when: composer.global_packages|length > 0

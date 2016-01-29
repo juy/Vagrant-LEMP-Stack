@@ -26,6 +26,16 @@ ansible:
   provision: true
   verbose: false
 
+# Composer
+composer:
+  # GitHub OAuth token (used to help overcome API rate limits)
+  github_oauth_token: ''
+  # Composer global packages
+  # See commented examples below for usage; the 'release' is optional, and defaults to '@stable'.
+  global_packages: []
+    # - { name: phpunit/phpunit, release: "4.7.x" }
+    # - { name: phpunit/phpunit, release: "@stable" }
+
 # Git config user credentials
 git:
   user_name: ""

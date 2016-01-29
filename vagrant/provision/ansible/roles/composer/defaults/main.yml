@@ -1,0 +1,5 @@
+---
+# The directory where global packages will be installed
+composer_home_path: "{{ home_dir }}/.composer"
+composer_home_owner: "{{ user }}"
+composer_home_group: "{{ user }}"

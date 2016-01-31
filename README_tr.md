@@ -43,7 +43,7 @@ Vagrant LEMP Paketi için hazırladığımız ubuntu kutusunu Vagrant sistemine 
 vagrant box add juysoft/vagrant-lemp-stack
 ```
 
-Bu işlem internet hızınıza bağlı olarak biraz zaman alabilir, bu yüzden yanınıza bir kahve veya sandviç almak isteyebilirsiniz. 
+Bu işlem internet hızınıza bağlı olarak biraz zaman alabilir, bu yüzden yanınıza bir kahve veya sandviç almak isteyebilirsiniz.
 
 ### 3. vagrant-cachier eklentisi kurulumu (isteğe bağlı)
 
@@ -190,7 +190,7 @@ composer global update
 ### Npm genel paketleri güncelleme
 
 ```shell
-npm update -g 
+npm update -g
 ```
 
 ----------

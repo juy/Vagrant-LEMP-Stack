@@ -82,7 +82,7 @@ Put your project in virtual machine `~/www` directory. For example `~/www/mylara
 
 Vagrant LEMP Stack is use Nginx wildcard system for infinite project. You don't need configure any virtualhost or edit some Nginx files. At the same time don't need Nginx config reload or restart any service.
 
-There is two domain extension, `.app` and `.site`. `.app` extension is usable for laravel project, this extension search a extra `public` directory on project root. `.site` extension is usable for normal site project, like wordpress, or any kind of project direct run on `root/index.php` file. 
+There is two domain extension, `.app` and `.site`. `.app` extension is usable for laravel project, this extension search a extra `public` directory on project root. `.site` extension is usable for normal site project, like wordpress, or any kind of project direct run on `root/index.php` file.
 
 Domain name is same as project directory name, our before example is `mylaravel`. If we use `http://mylaravel.app:8800`, Nginx look a `public/` directory, if we use `http://mylaravel.site:8800`, Nginx dont look `public/` directory.
 
@@ -187,7 +187,7 @@ composer global update
 ### Npm global package update
 
 ```shell
-npm update -g 
+npm update -g
 ```
 
 ----------

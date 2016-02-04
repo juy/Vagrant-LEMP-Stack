@@ -26,7 +26,7 @@ Vagrant.configure(2) do |config|
   config.vm.box = $config['box']['name']
   config.vm.box_version = $config['box']['version']
   #config.vm.box_check_update = false
-  config.vm.boot_timeout = 60
+  config.vm.boot_timeout = 120
 
   # Set the name of the VM. See: http://stackoverflow.com/a/17864388/100134
   config.vm.define "#{$config['machine_name']}" do |t|

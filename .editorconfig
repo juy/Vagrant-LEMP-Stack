@@ -1,23 +1,24 @@
-; This file is for unifying the coding style for different editors and IDEs.
-; More information at http://editorconfig.org
+# Editor Config
+# =================================================
+# http://editorconfig.org/
+# https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties
 
 root = true
 
+# All files
 [*]
 charset = utf-8
+indent_style = space
+indent_size = 4
+continuation_indent_size = 4
 end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
-indent_style = space
-indent_size = 4
+spaces_around_operators = true
 
-[*.json]
-indent_style = space
-indent_size = 4
-
-[{*.yml,Vagrantfile}]
+[{*.yml,*.json,Vagrantfile}]
 indent_style = space
 indent_size = 2
 
-[*.md]
+[*.{diff,md}]
 trim_trailing_whitespace = false

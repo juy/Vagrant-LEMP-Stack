@@ -1,24 +1,15 @@
 # Vagrant LEMP Stack
 
-#### Help support this project
-If you'd like to support this and other our creations projects, donate via [PayPal][paypal-donate-url].
-
-[![Support via PayPal][paypal-donate-img]][paypal-donate-url]
-
+> ### This project has been abandoned and will no longer be updated.
 
 ----------
-
 
 ## What is Vagrant LEMP Stack
 A development platform in a box, with everything you would need to develop PHP/Laravel websites.
 
-
-
 ## Dependencies
 * [Vagrant](http://www.vagrantup.com/downloads.html) `1.5.0`+ (Use `vagrant version` to check your version)
 * [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
-
-
 
 ## Installation
 Verify that you have the recommended Vagrant version for Vagrant LEMP Stack.
@@ -36,7 +27,6 @@ git clone https://github.com/juy/Vagrant-LEMP-Stack.git new-project
 
 **Downlaod**
 https://github.com/juy/Vagrant-LEMP-Stack/archive/master.zip
-
 
 ### 2. Add Vagrant Box
 Add the Vagrant LEMP Stack Box to Vagrant.
@@ -63,7 +53,6 @@ Run command inside Vagrant LEMP Stack.
 vagrant up && vagrant ssh
 ```
 
-
 ## Web, project usage
 
 #### Small note for vagrant shared folders
@@ -77,7 +66,6 @@ Put your project in virtual machine `~/www` directory. For example `~/www/mylara
 ### How to access them on browser
 
 `http://mylaravel.app:8800` or `http://mylaravel.site:8800`, we explain this on "wildcard system" section. Web port is `8800`, we keep different from 8000, because sometimes maybe we run `php artisan serve` outside virtual machine.
-
 
 ### Wildcard system
 
@@ -102,7 +90,6 @@ For windows we need add every single project on `C:\Windows\System32\drivers\etc
 *.app:8800 -> www/*/public
 *.site:8800 -> www/*
 ```
-
 
 ## Access and Ports
 
@@ -138,7 +125,6 @@ User        root        homestead
 Password    secret
 ```
 
-
 **PostgreSQL credentials for remote access**
 ```
 IP          127.0.0.1
@@ -168,7 +154,6 @@ vagrant box outdated
 vagrant box update
 ```
 
-
 ## Virtual machine update commands
 This commands for virtual ubuntu, need connect via ssh or `vagrant ssh`
 
@@ -193,7 +178,6 @@ npm update -g
 ```
 
 ----------
-
 
 ## Provisioned Content
 - **OS**
@@ -242,10 +226,5 @@ npm update -g
 
 ### License
 This project is open-sourced software licensed under the [MIT license][mit-url].
-
-
-
-[paypal-donate-img]: https://img.shields.io/badge/PayPal-donate-brightgreen.svg?style=flat-square
-[paypal-donate-url]: http://bit.ly/donateAngelside
 
 [mit-url]: http://opensource.org/licenses/MIT

@@ -1,6 +1,6 @@
 # Vagrant LEMP Stack
 
-> ### This project has been abandoned and will no longer be updated.
+> ### ⚠️ This project has been abandoned and will no longer be updated.
 
 ----------
 
